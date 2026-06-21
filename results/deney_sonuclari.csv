@@ -1,0 +1,13 @@
+id,group,image,wavelet,level,Q,threshold,color_mode,psnr_db,compression_ratio,zero_pct,original_bytes,compressed_bytes,output_image
+D1-HAAR,D1_wavelet,lena.bmp,HAAR,2,10.0000,5.0000,gray,39.8012,3.5738,68.7397,262144,73351,results/images/d1_HAAR_gray.png
+D1-DB2,D1_wavelet,lena.bmp,DB2,2,10.0000,5.0000,gray,12.9547,2.0108,6.1882,262144,130368,results/images/d1_DB2_gray.png
+D1-DB4,D1_wavelet,lena.bmp,DB4,2,10.0000,5.0000,gray,13.7864,3.9272,74.7917,262144,66751,results/images/d1_DB4_gray.png
+D1-SYM4,D1_wavelet,lena.bmp,SYM4,2,10.0000,5.0000,gray,19.3712,3.9602,75.1629,262144,66194,results/images/d1_SYM4_gray.png
+D2-L1,D2_level,lena.bmp,SYM4,1,10.0000,5.0000,gray,24.0894,2.8243,63.3266,262144,92818,results/images/d2_level1_gray.png
+D2-L2,D2_level,lena.bmp,SYM4,2,10.0000,5.0000,gray,19.3712,3.9602,75.1629,262144,66194,results/images/d2_level2_gray.png
+D2-L3,D2_level,lena.bmp,SYM4,3,10.0000,5.0000,gray,16.2068,4.4913,76.8658,262144,58367,results/images/d2_level3_gray.png
+D3-gray,D3_color,lena.bmp,SYM4,2,10.0000,5.0000,gray,19.3712,3.9602,75.1629,262144,66194,results/images/d3_gray.png
+D3-rgb,D3_color,lena.png,SYM4,2,10.0000,5.0000,rgb,19.6647,3.7502,68.7279,786432,209702,results/images/d3_rgb.png
+D3-ycbcr,D3_color,lena.png,SYM4,2,10.0000,5.0000,ycbcr,19.6835,2.9273,59.6808,786432,268652,results/images/d3_ycbcr.png
+D4-rgb,D4_colorspace,lena.png,SYM4,2,10.0000,5.0000,rgb,19.6647,3.7502,68.7279,786432,209702,results/images/d4_rgb.png
+D4-ycbcr,D4_colorspace,lena.png,SYM4,2,10.0000,5.0000,ycbcr,19.6835,2.9273,59.6808,786432,268652,results/images/d4_ycbcr.png
