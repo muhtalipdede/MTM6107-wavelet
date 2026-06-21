@@ -41,6 +41,25 @@ g++ -std=c++17 src/main.cpp src/wavelet.cpp src/huffman.cpp src/metrics.cpp src/
     -Isrc $(pkg-config --cflags --libs opencv4) -o wavelet_compress
 ```
 
+## Testler
+
+Google Test tabanlı unit testler varsayılan olarak derlenir:
+
+```bash
+cmake -S . -B build
+cmake --build build
+ctest --test-dir build --output-on-failure
+```
+
+Yalnızca uygulamayı derlemek için:
+
+```bash
+cmake -S . -B build -DBUILD_TESTING=OFF
+cmake --build build
+```
+
+Test kapsamı: DWT/IDWT, Huffman, metrikler, renk dönüşümleri ve sıkıştırma pipeline'ı.
+
 ## Çalıştırma
 
 Test görüntüleri `data/` klasöründedir (`lena.bmp`, `lena.png`).
@@ -90,6 +109,7 @@ MTM6107-wavelet/
 │   ├── metrics.cpp        # PSNR, sıkıştırma oranı
 │   └── compress.cpp       # Sıkıştırma pipeline'ı
 ├── data/                  # Test görüntüleri
+├── tests/                 # Unit testler (Google Test)
 ├── results/               # Deney çıktıları (CSV, görseller)
 ├── CMakeLists.txt
 └── README.md
